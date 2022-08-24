@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background:#E5E5E5;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper__inner {
+  margin: 0 auto;
+  width: 661px;
+  height: 763px;
+  background: #ccc;
+  position: relative;
+}
+
+
+$height: 61px;
+
+.select {
+  position: relative;
+}
+
+.search-input {
+  position: absolute;
+  top: 2*$height;
+  left: 77px;
+  width: 75%;
+  height: $height;
+  background: #ffffff;
+  color: #000000;
+  font-size: 48px;
+  line-height: 56px;
+  cursor: pointer;
+}
+
+.main {
+  position: absolute;
+  left: 77px;
+  top: 3*$height;
+  background-color: #E3E3E3;
+  width: 75%;
+}
+
+.searchResult {
+  padding-left: 13px;
+  height: 35px;
+  border: 1px solid black;
+  font-size: 30px;
+  line-height: 35px;
+
+  &:hover {
+    background-color: #65CDF9;
+    transition: .15s background-color ease-in;
+    cursor: pointer;
+  }
+}
+
+
+.card-body {
+  position: relative;
+  border: 2px solid black;
+}
+
+.list {
+  position: absolute;
+  top: 388px;
+  width: 75%;
+  left: 77px;
+}
+
+.listed-item {
+  position: absolute;
+  top: 388px;
+  background: #E27BEB;
+  width: 75%;
+  left: 77px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.list-item {
+  background: #E27BEB;
+  padding-left: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 42px;
+  height: 42px;
+  background-color: #E27BEB;
+  background-image: url('img/close.png');
+  background-size: 100% 100%;
+}
