@@ -49,8 +49,9 @@ class View {
     function handleClick(event) {
       event.currentTarget;
 
-      //очистка поискового поля
+      //очистка поискового поля и поисковой выдачи
       this.searchInput.value = "";
+      this.usersList.innerHTML = "";
 
       // далее - необходимо создание и вывод "кликнутых" элементов в список внизу страницы
       let addedEl1 = document.createElement("div");
